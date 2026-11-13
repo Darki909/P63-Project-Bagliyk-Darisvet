@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форми HTML</title>
+    <link rel="stylesheet" href="forms.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>Форми HTML</h1>
+      <p class="intro">
+        Форми потрібні для введення даних. У таблиці показані різні елементи,
+        які можна додати до форми.
+      </p>
+
+      <form>
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th scope="col">Елемент</th>
+              <th scope="col">Приклад</th>
+              <th scope="col">Призначення</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Текст</th>
+              <td><input type="text" name="name" placeholder="Ваше ім'я" /></td>
+              <td>Короткий текстовий рядок</td>
+            </tr>
+            <tr>
+              <th scope="row">Пароль</th>
+              <td><input type="password" name="password" placeholder="Пароль" /></td>
+              <td>Приховує введені символи</td>
+            </tr>
+            <tr>
+              <th scope="row">Електронна пошта</th>
+              <td><input type="email" name="email" placeholder="name@example.com" /></td>
+              <td>Перевіряє формат адреси</td>
+            </tr>
+            <tr>
+              <th scope="row">Число</th>
+              <td><input type="number" name="quantity" min="1" max="10" value="1" /></td>
+              <td>Числове значення з обмеженнями</td>
+            </tr>
+            <tr>
+              <th scope="row">Телефон</th>
+              <td><input type="tel" name="phone" placeholder="+380..." /></td>
+              <td>Введення номера телефону</td>
+            </tr>
+            <tr>
+              <th scope="row">Дата</th>
+              <td><input type="date" name="date" /></td>
+              <td>Вибір календарної дати</td>
+            </tr>
+            <tr>
+              <th scope="row">Час</th>
+              <td><input type="time" name="time" /></td>
+              <td>Вибір часу</td>
+            </tr>
+            <tr>
+              <th scope="row">Колір</th>
+              <td><input type="color" name="color" value="#2878a5" /></td>
+              <td>Вибір кольору</td>
+            </tr>
+            <tr>
+              <th scope="row">Діапазон</th>
+              <td><input type="range" name="volume" min="0" max="100" value="50" /></td>
+              <td>Вибір значення повзунком</td>
+            </tr>
+            <tr>
+              <th scope="row">Прапорець</th>
+              <td><label><input type="checkbox" name="agreement" /> Погоджуюсь</label></td>
+              <td>Незалежний вибір одного пункту</td>
+            </tr>
+            <tr>
+              <th scope="row">Перемикачі</th>
+              <td>
+                <label><input type="radio" name="delivery" value="pickup" checked /> Самовивіз</label>
+                <label><input type="radio" name="delivery" value="courier" /> Кур'єр</label>
+              </td>
+              <td>Вибір одного пункту групи</td>
+            </tr>
+            <tr>
+              <th scope="row">Файл</th>
+              <td><input type="file" name="attachment" /></td>
+              <td>Вибір файлу на пристрої</td>
+            </tr>
+            <tr>
+              <th scope="row">Список</th>
+              <td>
+                <select name="city">
+                  <option value="odesa">Одеса</option>
+                  <option value="mykolaiv">Миколаїв</option>
+                  <option value="vinnytsia">Вінниця</option>
+                </select>
+              </td>
+              <td>Вибір значення зі списку</td>
+            </tr>
+            <tr>
+              <th scope="row">Багаторядковий текст</th>
+              <td><textarea name="comment" rows="2" placeholder="Ваш коментар"></textarea></td>
+              <td>Введення довшого тексту</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="demo-button" type="button">Кнопка</button>
+      </form>
+    </main>
+  </body>
+</html>

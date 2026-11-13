@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="flex.css" />
+</head>
+<body>
+    <h1>Флекс-елементи</h1>
+    <p>
+        Флекс-елементи (або флекс-контейнери) - гнучкий варіант
+        розміщення елементів у контейнерах (в інших елементах). 
+    </p>
+
+    <h2>space-between</h2>
+    Крайні елементи розташовуються по краях контейнера, 
+    а проміжки між елементами рівномірні.
+    <div class="container j-between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    
+    <h2>space-around</h2>
+    Вирівнюються проміжки навколо елементів (ліворуч і праворуч), 
+    тобто проміжки між елементами вдвічі більші за проміжки 
+    між краєм контейнера і елементом.
+    <div class="container j-around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    
+    <h2>space-evenly</h2>
+    Вирівнюються всі проміжки (між елементами і краями контейнера).
+    <div class="container j-evenly">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h1>Вирівнювання поперек основної осі</h1>
+    <h2>center</h2>
+    <div class="container h-150 j-evenly a-center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h2>stretch</h2>
+    <p>
+        Режим stretch "витягує" елементи, щоб вони заповнювали
+        контейнер. Але це можливо тоді, коли висота дочірніх 
+        (внутрішніх) елементів не є фіксованою. Наприклад, 100%
+    </p>
+    <div class="container h-150 j-evenly a-stretch">
+        <div class="item h-auto">1</div>
+        <div class="item h-auto">2</div>
+        <div class="item h-auto">3</div>
+        <div class="item h-auto">4</div>
+    </div>
+
+    <h1>flex - властивість</h1>
+    <p>
+        CSS властивість flex задає "еластичність" (або вагу)
+        елементу. Еластичні елементи витягуються, займаючи весь
+        відведений для нього простір. Але елементи з різною
+        вагою займають різну долю загального вільного простору
+        (пропорційно до ваги)
+    </p>
+    <div class="container h-150 j-evenly a-stretch">
+        <div class="flex-1">1</div>
+        <div class="flex-2">2</div>
+    </div>
+    <h1>Картки та макети</h1>
+    <h2>Картка</h2>
+    <p>
+        Картка (card) - один з центральних термінів
+        веб-дизайну. Широко вживається для представлення
+        різноманітних сутностей: товарів, фільмів, ігор тощо.
+    </p>
+    <article class="card">
+        <img class="card-image" src="keyboard.jpg" alt="Механічна клавіатура з підсвічуванням" />
+        <div class="card-content">
+            <h2 class="card-headline">Механічна клавіатура</h2>
+            <p class="card-subhead">Підсвічування RGB · 87 клавіш</p>
+            <p class="card-text">
+                Зручна компактна клавіатура для роботи, навчання та ігор.
+                Яскраве підсвічування допомагає створити власний стиль.
+            </p>
+            <div class="card-footer">
+                <span class="card-price">₴ 1 899</span>
+                <button class="card-button card-button-primary" type="button">Купити</button>
+                <button class="card-button" type="button" aria-pressed="false">Обране</button>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

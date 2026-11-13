@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кольори RGB та HEX</title>
+    <link rel="stylesheet" href="rgb.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>Як записують кольори в CSS</h1>
+      <p>
+        Колір на екрані можна задати трьома значеннями: червоним, зеленим і
+        синім. Для кожного значення можна взяти число від 0 до 255.
+      </p>
+
+      <section>
+        <h2>Запис RGB</h2>
+        <p><code>rgb(червоний, зелений, синій)</code></p>
+        <div class="color-grid">
+          <div class="swatch red"><span>rgb(255, 0, 0)</span></div>
+          <div class="swatch green"><span>rgb(0, 255, 0)</span></div>
+          <div class="swatch blue"><span>rgb(0, 0, 255)</span></div>
+          <div class="swatch gray"><span>rgb(128, 128, 128)</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Шістнадцятковий запис</h2>
+        <p>
+          У CSS колір також можна записати як <code>#RRGGBB</code>. Після знака
+          <code>#</code> ідуть пари цифр для червоного, зеленого та синього
+          каналів. У шістнадцятковій системі використовують цифри
+          <code>0–9</code> і літери <code>A–F</code>; кожна пара задає число від
+          <code>00</code> до <code>FF</code> (від 0 до 255).
+        </p>
+        <ul>
+          <li><code>#FF0000</code> — червоний</li>
+          <li><code>#00FF00</code> — зелений</li>
+          <li><code>#0000FF</code> — синій</li>
+          <li><code>#000000</code> — чорний, <code>#FFFFFF</code> — білий</li>
+        </ul>
+        <p>
+          Скорочений запис на кшталт <code>#F00</code> можливий, коли кожна
+          пара складається з однакових символів: <code>#F00</code> означає
+          <code>#FF0000</code>.
+        </p>
+      </section>
+
+      <a class="back-link" href="index.html">← До списку розділів</a>
+    </main>
+  </body>
+</html>

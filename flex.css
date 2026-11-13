@@ -1,0 +1,99 @@
+.container {
+    border: 2px solid salmon;
+    display: flex; /* режим флекс-контейнера */
+}
+.h-150 {
+    height: 150px;
+}
+.h-auto {
+    height: auto !important;
+}
+.item {
+    background-color: tomato;
+    border: 2px solid maroon;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.j-center {
+    justify-content: center; /* вирівнювання вздовж головної осі */
+}
+.j-between {
+    justify-content: space-between; /*  */
+}
+.j-evenly {
+    justify-content: space-evenly; /*  */
+}
+.j-around {
+    justify-content: space-around; /*  */
+}
+.a-center {
+    align-items: center; /* вирівнювання поперек головної осі */
+}
+.a-stretch {
+    align-items: stretch; /* вирівнювання поперек головної осі */
+}
+.flex-1 {
+    background-color: lime;
+    flex: 1;
+}
+.flex-2 {
+    background-color: orange;
+    flex: 2;
+}
+.card {
+    background-color: white;
+    border: 1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+.card-image {
+    display: block;
+    height: 170px;
+    object-fit: cover;
+    width: 100%;
+}
+.card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+}
+.card-headline {
+    font-size: 24px;
+    margin: 0 0 5px;
+}
+.card-subhead {
+    color: #666;
+    margin: 0 0 10px;
+}
+.card-text {
+    flex: 1;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+.card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+.card-button {
+    border: 1px solid #777;
+    background: white;
+    cursor: pointer;
+    font: inherit;
+    padding: 6px 10px;
+}
+.card-button-primary {
+    margin-left: auto;
+    background: #ddd;
+    color: white;
+}
+.card-price {
+    font-size: 18px;
+    font-weight: 700;
+}

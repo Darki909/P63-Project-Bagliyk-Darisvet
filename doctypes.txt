@@ -1,0 +1,30 @@
+DOCTYPE та версії HTML
+
+Декларація <!DOCTYPE ...> розміщується на початку HTML-документа. Вона
+повідомляє браузеру, за яким стандартом потрібно розбирати документ.
+DOCTYPE не є звичайним HTML-елементом і не має закривального тегу.
+
+Сучасний HTML:
+  <!DOCTYPE html>
+
+Цей короткий запис використовується для HTML Living Standard (часто його
+називають HTML5) і вмикає стандартний режим відображення в браузерах.
+
+Історичні декларації HTML 4.01:
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+    "http://www.w3.org/TR/html4/frameset.dtd">
+
+Strict описував суворіший набір елементів, Transitional дозволяв частину
+застарілої розмітки, а Frameset призначався для документів із frameset.
+
+XHTML 1.0 також мав окремі декларації Strict, Transitional і Frameset.
+Наприклад, XHTML 1.0 Strict:
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+Для нових сторінок використовують <!DOCTYPE html>. Інші приклади залишилися
+для ознайомлення зі старими версіями стандарту.

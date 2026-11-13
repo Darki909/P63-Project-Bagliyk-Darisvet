@@ -1,0 +1,65 @@
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.intro {
+  line-height: 1.5;
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-table th,
+.form-table td {
+  padding: 8px;
+  border: 1px solid #aaa;
+  text-align: left;
+}
+
+.form-table thead {
+  background: #e7e7e7;
+}
+
+.form-table tbody th {
+  width: 20%;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
+.form-table label {
+  margin-right: 8px;
+}
+
+.demo-button {
+  margin-top: 12px;
+  padding: 6px 12px;
+}
+
+@media (max-width: 650px) {
+  body {
+    margin: 12px;
+  }
+
+  .form-table thead {
+    display: none;
+  }
+
+  .form-table tr,
+  .form-table th,
+  .form-table td {
+    display: block;
+    width: auto;
+  }
+}

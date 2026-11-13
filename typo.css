@@ -1,0 +1,83 @@
+body {
+    margin: auto;
+    max-width: 800px;
+    text-align: justify;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16pt;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.5;
+}
+.nunito-regular {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16pt;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.5;
+}
+.display-large {
+    font-size: 41pt;
+    font-weight: 200;
+    font-variation-settings: "wdth" 75;
+}
+.display-medium {
+    font-size: 26pt;
+    font-weight: 400;
+}
+button { /* базовий стиль - для всіх станів */
+    background-color: burlywood;
+    font-size: 16pt;
+    padding: .5em 1em;
+}
+button:hover { /* стиль стану (псевдоклас) - включається коли над елементом курсор */
+    background-color: cadetblue;
+}
+button:focus { /* стиль стану (псевдоклас) - включається коли елемент активний */
+    background-color: rgb(26, 109, 50);
+}
+#agree { /* з символу # починаються стилі для атрибута id (<input id="agree" ...) */
+    margin-right: 1em;
+    transform: scale(2);
+}
+#agree ~ label { /* ~ - наступний елемент за даним (з тегом label) */
+    color: red;
+}
+#agree:checked ~ label { /* ~ - наступний елемент за відміченим елементом */
+    color: green;
+}
+#agree:hover {
+    outline: 2px solid cadetblue;
+    outline-offset: 3px;
+}
+.radio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.radio-list input {
+    height: 1px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+}
+.radio-list label {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px 14px;
+}
+.radio-list input:checked + label {
+    border-color: cadetblue;
+    background-color: #e8f3f2;
+}
+.radio-list input:focus-visible + label {
+    outline: 2px solid #1a6d32;
+    outline-offset: 2px;
+}

@@ -1,0 +1,33 @@
+body {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 12px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.color-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.swatch {
+  display: flex;
+  width: 160px;
+  height: 80px;
+  align-items: end;
+  padding: 6px;
+  border: 1px solid #777;
+}
+
+.swatch span {
+  padding: 2px 4px;
+  background: white;
+  font-family: monospace;
+}
+
+.red { background: rgb(255, 0, 0); }
+.green { background: rgb(0, 255, 0); }
+.blue { background: rgb(0, 0, 255); }
+.gray { background: rgb(128, 128, 128); }
